@@ -2,16 +2,6 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
-- type: Label
-  properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
-    visible: true, text: FREE SHIPPING ON ALL ORDERS OVER $35, font_size: 18, font: '',
-    spacing_above: none, icon_align: left, spacing_below: none, italic: false, background: 'theme:Secondary
-      500', bold: false, underline: false, icon: ''}
-  name: banner
-  layout_properties:
-    col_widths: {}
-    grid_position: KJLXAR,AVKWJB
-    full_width_row: true
 - type: ColumnPanel
   properties: {role: shop-header, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: small,

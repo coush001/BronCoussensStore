@@ -20,9 +20,7 @@ class Main(MainTemplate):
     self.init_components(**properties)
     self.navigate(self.home_link, Home())
     self.cart_items = []
-    
-    for link in [self.home_link_copy, self.shop_link_copy, self.about_link_copy, self.contact_link_copy, self.insta_link_copy, self.cart_link_copy]:
-      link.role = ['spaced-title', 'display-responsive']
+    print(self.subscribe_textbox.foreground)
     
     for link in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.insta_link, self.cart_link]:
       link.role = ['spaced-title', 'display-none-responsive']
@@ -71,6 +69,8 @@ class Main(MainTemplate):
       anvil.server.call('add_subscriber', email)
       self.subscribe_textbox.text = None
       Notification("Thanks for subscribing!").show()
+
+
 
 
 

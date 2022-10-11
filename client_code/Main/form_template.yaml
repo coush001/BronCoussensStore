@@ -20,131 +20,51 @@ components:
     components: []
   - type: ColumnPanel
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"IPFZTT":15,"AHSXUN":45,"LCPLJN":20,"CWCOEF":40,"NOYBEH":20,"RFCTKC":18,"FOYDPL":37,"RAXXDE":23,"GSLTDF":18}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
       spacing_below: small, background: 'theme:Primary 500'}
     name: card_1
-    layout_properties: {grid_position: 'SFZTYX,WGSIKL', full_width_row: true}
+    layout_properties: {grid_position: 'PTKZSA,EYTBLR', full_width_row: true}
     components:
-    - type: Spacer
-      properties: {height: 32}
-      name: spacer_3
-      layout_properties: {grid_position: 'KPJBSC,YKGHBB'}
-    - type: Spacer
-      properties: {height: 55}
-      name: spacer_4
-      layout_properties: {grid_position: 'UGMRFF,IPFZTT VCRBBY,NICBFZ'}
+    - type: Link
+      properties: {role: null, url: 'https://www.instagram.com/bronwencoussens_ceramics/',
+        align: center, tooltip: '', border: '', foreground: white, visible: true,
+        text: '', font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
+        icon_align: left, col_widths: '{}', spacing_below: small, italic: false, background: '',
+        bold: false, underline: false, icon: 'fa:instagram'}
+      name: insta_link_2
+      layout_properties: {grid_position: 'KRQCTR,XNFTJN', row: SNXMYR, width_xs: 1,
+        col_xs: 5, full_width_row: true, row_background: 'theme:Primary 500'}
+      components: []
     - type: Label
-      properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: Bronwen Coussens Pottery, font_size: 24, font: Yeseva One,
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_7
-      layout_properties: {grid_position: 'UGMRFF,IPFZTT LBYAUR,PHKOAE'}
-    - type: Label
-      properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: OUR STORE, font_size: 18, font: '', spacing_above: small,
+      properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
+        visible: true, text: 'Want to be notified of new art and exhibitions - sign
+          up for notifications here:', font_size: null, font: '', spacing_above: none,
         icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
         underline: false, icon: ''}
-      name: label_2
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN NZSVDO,NOYBEH'}
-    - type: Label
-      properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: STAY CONNECTED, font_size: 18, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_8
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN NZSVDO,RFCTKC'}
-    - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: Henley-on-Thames, font_size: null, font: '', spacing_above: none,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_4
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,LCPLJN'}
-    - type: FlowPanel
-      properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-        foreground: '', visible: true, spacing_above: small, spacing_below: small,
-        background: ''}
-      name: flow_panel_1
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,GSLTDF CLQCYK,RRYDDT'}
-      components:
-      - type: Link
-        properties: {role: null, url: 'https://www.instagram.com', align: right, tooltip: '',
-          border: '', foreground: white, visible: true, text: '', font_size: 18, wrap_on: mobile,
-          font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-          spacing_below: small, italic: false, background: '', bold: false, underline: false,
-          icon: 'fa:instagram'}
-        name: insta_link_2
-        layout_properties: {grid_position: 'OBLSRT,TLNZHB'}
-        components: []
-      - type: Link
-        properties: {role: null, url: 'https://twitter.com/anvil_works', align: center,
-          tooltip: '', border: '', foreground: white, visible: true, text: '', font_size: 18,
-          wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left,
-          col_widths: '{}', spacing_below: small, italic: false, background: '', bold: false,
-          underline: false, icon: 'fa:twitter'}
-        name: twitter_link_2
-        layout_properties: {grid_position: 'OBLSRT,NIXNHS'}
-        components: []
-      - type: Link
-        properties: {role: null, url: 'https://www.facebook.com', align: left, tooltip: '',
-          border: '', foreground: white, visible: true, text: '', font_size: 18, wrap_on: mobile,
-          font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-          spacing_below: small, italic: false, background: '', bold: false, underline: false,
-          icon: 'fa:facebook-official'}
-        name: link_2
-        layout_properties: {grid_position: 'OBLSRT,QEZRZQ'}
-    - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: '(555) 555-5555
-
-          info@cupcakesco.com', font_size: null, font: '', spacing_above: small, icon_align: left,
-        spacing_below: small, italic: false, background: '', bold: false, underline: false,
-        icon: ''}
-      name: label_6
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,GSLTDF UGBPYN,CLSQMT'}
-    - type: Spacer
-      properties: {height: 23}
-      name: spacer_6
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN OMGCXX,FOYDPL XPYUKW,GBAUQJ'}
-    - type: Label
-      properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: 'SUBSCRIBE FOR NEW ART AND UPDATES:', font_size: null,
-        font: '', spacing_above: none, icon_align: left, spacing_below: none, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
       name: label_9
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN OMGCXX,FOYDPL APDOTD,CKMYMO'}
-    - type: Spacer
-      properties: {height: 32}
-      name: spacer_2
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN OMGCXX,RAXXDE'}
-    - type: FlowPanel
-      properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-        foreground: '', visible: true, spacing_above: small, spacing_below: small,
-        background: ''}
-      name: flow_panel_2
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN YDVRTJ,VMFNGH'}
-      components:
-      - type: TextBox
-        properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter your email,
-          border: solid 1 px white, enabled: true, foreground: 'theme:Primary 700',
-          visible: true, text: '', font_size: null, font: '', spacing_above: small,
-          type: text, spacing_below: small, italic: false, background: white, bold: false,
-          underline: false}
-        name: subscribe_textbox
-        layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,CWCOEF WELRAU,DOOZEV'}
-      - type: Button
-        properties: {role: secondary-color, align: left, tooltip: '', border: '',
-          enabled: true, foreground: '', visible: true, text: submit, font_size: null,
-          font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '', bold: false, underline: false, icon: ''}
-        name: subscribe_button
-        layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,CWCOEF WELRAU,NGNRMA'}
-        event_bindings: {click: subscribe_button_click}
-    - type: Spacer
-      properties: {height: 32}
-      name: spacer_5
-      layout_properties: {grid_position: 'DOXFAF,USBKNR'}
+      layout_properties: {grid_position: 'KRQCTR,RKNLPM', full_width_row: true, row_background: 'theme:Primary
+          500'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter your email,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: true,
+        background: '', bold: false, underline: false}
+      name: subscribe_textbox
+      layout_properties: {grid_position: 'KRQCTR,OAQBWL', width: 196.5, full_width_row: true,
+        row_background: 'theme:Primary 500'}
+    - type: Button
+      properties: {role: secondary-color, align: center, tooltip: '', border: '',
+        enabled: true, foreground: '', visible: true, text: submit, font_size: null,
+        font: '', spacing_above: small, icon_align: top, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: subscribe_button
+      layout_properties: {grid_position: 'KRQCTR,DWQDEI', full_width_row: true, row_background: 'theme:Primary
+          500'}
+      event_bindings: {click: subscribe_button_click}
+  - type: XYPanel
+    properties: {height: 66, width: 605}
+    name: xy_panel_1
+    layout_properties: {grid_position: 'ESYEID,RBAYKQ'}
 - type: FlowPanel
   properties: {role: null, spacing: none, align: right, tooltip: '', border: '', foreground: '',
     visible: true, spacing_above: small, spacing_below: small, background: ''}
@@ -210,67 +130,8 @@ components:
     event_bindings: {click: cart_link_click}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: BronwenCoussens Pottery, font_size: 24, font: Yeseva One,
+    visible: true, text: Bronwen Coussens Ceramics, font_size: 24, font: Yeseva One,
     spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
     bold: false, underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: title}
-- type: ColumnPanel
-  properties: {role: transparent-box, col_widths: '{}'}
-  name: transparent_box_1
-  layout_properties: {slot: left-nav}
-  components:
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: HOME, font_size: 16, wrap_on: mobile, font: '',
-      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: home_link_copy
-    layout_properties: {grid_position: 'HMTAOD,LXTIVA'}
-    event_bindings: {click: home_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: SHOP, font_size: 16, wrap_on: mobile, font: '',
-      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: shop_link_copy
-    layout_properties: {grid_position: 'RLAWPJ,RQPHTX'}
-    components: []
-    event_bindings: {click: shop_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: ABOUT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: about_link_copy
-    layout_properties: {grid_position: 'ATQDSN,KVANSM'}
-    event_bindings: {click: about_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: CONTACT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: contact_link_copy
-    layout_properties: {grid_position: 'UKNMJP,TIMAZB'}
-    event_bindings: {click: contact_link_click}
-  - type: Link
-    properties: {role: null, url: 'https://www.instagram.com', align: left, tooltip: '',
-      border: '', foreground: '', visible: true, text: '', font_size: null, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: 'fa:instagram'}
-    name: insta_link_copy
-    layout_properties: {grid_position: 'THSJPT,KHHHKF'}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: VIEW CART, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: 'fa:shopping-cart'}
-    name: cart_link_copy
-    layout_properties: {grid_position: 'QBIBOP,WDAARA'}
-    event_bindings: {click: cart_link_click}

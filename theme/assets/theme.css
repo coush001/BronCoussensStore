@@ -147,6 +147,11 @@ a:hover, a:active {
   border-bottom: 1px solid %color:White%;
 }
 
+input.anvil-component::placeholder {
+  color: % color:grey%!important;
+  font-size: 15px!important;
+}
+
 .anvil-role-logo:before {
   content: "";
   display: block;

@@ -50,6 +50,7 @@ roles:
 - {name: display-responsive}
 - {name: display-none-responsive}
 - {name: left-right-padding}
+- {name: signup, components: null}
 color_scheme:
   preset_groups:
   - name: Primary Colour
@@ -185,10 +186,10 @@ color_scheme:
       - {name: Secondary 500, color: '#9E9E9E'}
       - {name: Secondary 700, color: '#616161'}
   colors:
-  - {name: Primary 500, color: '#1A508B'}
-  - {name: Primary 700, color: '#0D335D'}
-  - {name: Secondary 500, color: '#C1A1D3'}
-  - {name: Secondary 700, color: '#9B80AB'}
+  - {name: Primary 500, color: '#2b3134'}
+  - {name: Primary 700, color: '#2b3134'}
+  - {name: Secondary 500, color: '#0366a4'}
+  - {name: Secondary 700, color: '#eeefe9'}
   - {name: White, color: '#FFFFFF'}
   - {name: Gray 50, color: '#FAFAFA'}
   - {name: Gray 100, color: '#F5F5F5'}
@@ -198,4 +199,4 @@ color_scheme:
   - {name: Gray 800, color: '#424242'}
   - {name: Gray 900, color: '#212121'}
   - {name: Black, color: '#000000'}
-  - {name: Neutral, color: '#FFF3E6'}
+  - {name: Neutral, color: '#a9cac1'}
