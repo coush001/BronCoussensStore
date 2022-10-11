@@ -1,8 +1,8 @@
 dependencies: []
 services:
 - source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
+  client_config: {enable_v2: true}
+  server_config: {auto_create_missing_columns: true}
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
@@ -18,7 +18,7 @@ allow_embedding: false
 name: BronwenCoussens
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {title: BronwenCoussens, logo_img: 'asset:maps-icon.png'}
+metadata: {title: BC  Ceramics, logo_img: 'asset:closepot.png', description: Bronwen Coussens Ceramics}
 startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Yeseva+One&display=swap"
     rel="stylesheet">'}
