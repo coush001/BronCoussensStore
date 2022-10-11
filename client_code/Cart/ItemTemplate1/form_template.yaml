@@ -1,0 +1,62 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: ColumnPanel
+  properties: {role: top-bottom-border, tooltip: '', border: 2px 0px, foreground: '',
+    visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"WSTKHT":20,"NZCRTN":40,"QUEZEI":40,"AIBSDM":20}',
+    spacing_below: small, background: ''}
+  name: column_panel_1
+  layout_properties: {grid_position: 'UIQUQE,RNNUUZ'}
+  components:
+  - type: Image
+    properties: {height: 130}
+    name: image_1
+    layout_properties: {grid_position: 'NWYVIC,WSTKHT'}
+    data_bindings:
+    - {property: source, code: 'self.item[''product''][''img'']'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'NWYVIC,NZCRTN HFUTIJ,QUEZEI'}
+    data_bindings:
+    - {property: text, code: 'self.item[''product''][''name'']'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: total_label
+    layout_properties: {grid_position: 'NWYVIC,NZCRTN HFUTIJ,AIBSDM'}
+    data_bindings:
+    - {property: text, code: 'f"${self.item[''product''][''price''] * self.item[''quantity'']}"'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'NWYVIC,NZCRTN ISFRII,CJHQNT PXDWVR,JXMZES'}
+    data_bindings:
+    - {property: text, code: 'f"${self.item[''product''][''price'']} each"'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'NWYVIC,NZCRTN ISFRII,CJHQNT CJCJZQ,BVFIHF'}
+    data_bindings:
+    - {property: text, code: 'f"qty. {self.item[''quantity'']}"'}
+  - type: Button
+    properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '', font_size: 24, font: '', spacing_above: none,
+      icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
+      underline: false, icon: 'fa:trash-o'}
+    name: delete_button
+    layout_properties: {grid_position: 'NWYVIC,NZCRTN ISFRII,YXQNRB'}
+    event_bindings: {click: delete_button_click}
+is_package: true

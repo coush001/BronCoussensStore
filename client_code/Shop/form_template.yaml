@@ -1,0 +1,55 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
+    visible: true, text: FREE SHIPPING ON ALL ORDERS OVER $35, font_size: 18, font: '',
+    spacing_above: none, icon_align: left, spacing_below: none, italic: false, background: 'theme:Secondary
+      500', bold: false, underline: false, icon: ''}
+  name: banner
+  layout_properties:
+    col_widths: {}
+    grid_position: KJLXAR,AVKWJB
+    full_width_row: true
+- type: ColumnPanel
+  properties: {role: shop-header, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: small,
+    background: ''}
+  name: card_1
+  layout_properties: {grid_position: 'YTNVSO,VGKHHW', full_width_row: true}
+  components:
+  - type: ColumnPanel
+    properties: {role: transparent-box, col_widths: '{}'}
+    name: transparent_box_1
+    layout_properties: {grid_position: 'LEDVYI,ISPLCE'}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
+        visible: true, text: Shop our freshly baked cupcakes, font_size: 42, font: Yeseva One,
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'IGPKYD,PNOVMP'}
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
+        visible: true, text: We bake our cupcakes fresh everyday. Check us out in store for daily flavors.,
+        font_size: 20, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'TVRTSG,VLCOXJ'}
+- type: Spacer
+  properties: {height: 49}
+  name: spacer_1
+  layout_properties: {grid_position: 'XOKNVO,PCSYFZ'}
+- type: FlowPanel
+  properties: {role: flow-flexer, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_1
+  layout_properties: {grid_position: 'VXNQSP,IHSNBX', full_width_row: true}
+  components: []
+- type: Spacer
+  properties: {height: 50}
+  name: spacer_2
+  layout_properties: {grid_position: 'CVHVKQ,NABFBO'}
+is_package: true

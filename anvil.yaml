@@ -1,0 +1,78 @@
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/google.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/stripe.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Main}
+package_name: Shop_Template
+allow_embedding: false
+name: Shop Template (2)
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: null
+native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">'}
+db_schema:
+  products:
+    title: Products
+    client: search
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: description
+      admin_ui: {width: 200}
+      type: string
+    - name: price
+      admin_ui: {width: 200}
+      type: number
+    - name: img
+      admin_ui: {width: 200}
+      type: media
+    - name: best_seller
+      admin_ui: {width: 200}
+      type: bool
+  contact:
+    title: Contact
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: message
+      admin_ui: {width: 200}
+      type: string
+    - name: date
+      admin_ui: {width: 200}
+      type: datetime
+  subscribers:
+    title: Subscribers
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+  orders:
+    title: Orders
+    client: none
+    server: full
+    columns:
+    - name: charge_id
+      admin_ui: {width: 200}
+      type: string
+    - name: order
+      admin_ui: {width: 200}
+      type: simpleObject
+renamed: true
