@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Home import Home
-from ..Shop import Shop
+from ..OnlineGallery import OnlineGallery
 from ..Contact import Contact
 from ..About import About
 from ..Cart import Cart
@@ -37,7 +37,7 @@ class Main(MainTemplate):
   def navigate(self, active_link, form):
     for i in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.cart_link]:
       i.foreground = 'theme:Primary 700'
-    active_link.foreground = 'theme:Secondary 500'
+    active_link.foreground = 'theme:RichBlue'
     self.column_panel_1.clear()
     self.column_panel_1.add_component(form, full_width_row=True)
 
@@ -45,10 +45,9 @@ class Main(MainTemplate):
     """This method is called when the link is clicked"""
     self.navigate(self.home_link, Home())
 
-
   def shop_link_click(self, **event_args):
     """This method is called when the link is clicked"""
-    self.navigate(self.shop_link, Shop())
+    self.navigate(self.shop_link, OnlineGallery())
 
   def about_link_click(self, **event_args):
     """This method is called when the link is clicked"""

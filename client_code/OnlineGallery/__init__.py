@@ -1,4 +1,4 @@
-from ._anvil_designer import ShopTemplate
+from ._anvil_designer import OnlineGalleryTemplate
 from anvil import *
 import stripe.checkout
 import anvil.server
@@ -9,7 +9,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..Product import Product
 
-class Shop(ShopTemplate):
+class OnlineGallery(OnlineGalleryTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

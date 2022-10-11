@@ -16,16 +16,20 @@ components:
     components:
     - type: Label
       properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: Shop our freshly baked cupcakes, font_size: 42, font: Yeseva One,
+        visible: true, text: My current portfolio of work, font_size: 42, font: Yeseva One,
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_1
       layout_properties: {grid_position: 'IGPKYD,PNOVMP'}
     - type: Label
       properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: We bake our cupcakes fresh everyday. Check us out in store for daily flavors.,
-        font_size: 20, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
+        visible: true, text: 'Please contact me if you are interested in commissioning
+          something specific
+
+
+          Sign up for alerts of new available work at the bottom of the page!', font_size: 20,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
       name: label_2
       layout_properties: {grid_position: 'TVRTSG,VLCOXJ'}
 - type: Spacer

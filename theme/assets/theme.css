@@ -148,7 +148,7 @@ a:hover, a:active {
 }
 
 input.anvil-component::placeholder {
-  color: % color:grey%!important;
+  color:#e4e7e8!important;
   font-size: 15px!important;
 }
 
@@ -316,22 +316,10 @@ input.anvil-component::placeholder {
   line-height: 1;
   width: 58px;
 }
-.left-nav-placeholder .prompt {
-  display: inline-block;
-  white-space: nowrap;
-  transform: translate(-50%,0) rotate(-90deg) translate(-50%,0) translate(15px,16px);
-  padding: 16px 16px;
-  color: #888;
-  outline: 1px dotted #888;
-  visibility: hidden;
-}
-.anvil-highlight .left-nav-placeholder .prompt {
-  visibility: visible;
-}
 
-.left-nav > .column-panel {
-  padding: 24px 0;
-}
+
+
+
 .left-nav > .column-panel > .anvil-panel-section > .anvil-panel-section-container:not(.full-width-row) {
   margin: 0 16px;
   width: initial;
@@ -848,7 +836,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 */
 
 .anvil-role-header-photo {
-  background: url(_/theme/header.jpg);
+  background: url(_/theme/pots1.png);
   min-height: 700px;
   background-attachment: fixed;
   background-size: cover;
