@@ -2,6 +2,7 @@ is_package: true
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
+  event_bindings: {}
 components:
 - type: ColumnPanel
   properties: {role: max-width, tooltip: '', border: '', foreground: '', visible: true,
@@ -19,7 +20,7 @@ components:
     components: []
   - type: ColumnPanel
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"IPFZTT":15,"AHSXUN":45,"LCPLJN":20,"PFDDNQ":22,"NAQZJW":20,"CWCOEF":40,"NOYBEH":20,"WIBESS":22,"RFCTKC":18,"FOYDPL":37,"RAXXDE":23,"GSLTDF":18}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"IPFZTT":15,"AHSXUN":45,"LCPLJN":20,"CWCOEF":40,"NOYBEH":20,"RFCTKC":18,"FOYDPL":37,"RAXXDE":23,"GSLTDF":18}',
       spacing_below: small, background: 'theme:Primary 500'}
     name: card_1
     layout_properties: {grid_position: 'SFZTYX,WGSIKL', full_width_row: true}
@@ -34,9 +35,9 @@ components:
       layout_properties: {grid_position: 'UGMRFF,IPFZTT VCRBBY,NICBFZ'}
     - type: Label
       properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: Cupcakes & Co., font_size: 24, font: Yeseva One, spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
+        visible: true, text: Bronwen Coussens Pottery, font_size: 24, font: Yeseva One,
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
       name: label_7
       layout_properties: {grid_position: 'UGMRFF,IPFZTT LBYAUR,PHKOAE'}
     - type: Label
@@ -48,13 +49,6 @@ components:
       layout_properties: {grid_position: 'UGMRFF,AHSXUN NZSVDO,NOYBEH'}
     - type: Label
       properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: OPENING HOURS, font_size: 18, font: '', spacing_above: small,
-        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_3
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN NZSVDO,WIBESS'}
-    - type: Label
-      properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
         visible: true, text: STAY CONNECTED, font_size: 18, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
@@ -62,34 +56,17 @@ components:
       layout_properties: {grid_position: 'UGMRFF,AHSXUN NZSVDO,RFCTKC'}
     - type: Label
       properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: '129 West 81st Street
-
-          Apartment 5A
-
-          New York, NY
-
-          ', font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
+        visible: true, text: Henley-on-Thames, font_size: null, font: '', spacing_above: none,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
       name: label_4
       layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,LCPLJN'}
-    - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: 'Closed Mondays
-
-          Tue - Thurs: 9am - 5pm
-
-          Fri - Sun: 9am - 8pm
-
-          ', font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
-      name: label_5
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,PFDDNQ'}
     - type: FlowPanel
       properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
         foreground: '', visible: true, spacing_above: small, spacing_below: small,
         background: ''}
       name: flow_panel_1
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,GSLTDF'}
+      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,GSLTDF CLQCYK,RRYDDT'}
       components:
       - type: Link
         properties: {role: null, url: 'https://www.instagram.com', align: right, tooltip: '',
@@ -125,30 +102,28 @@ components:
         spacing_below: small, italic: false, background: '', bold: false, underline: false,
         icon: ''}
       name: label_6
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,NAQZJW'}
+      layout_properties: {grid_position: 'UGMRFF,AHSXUN VIQBXT,GSLTDF UGBPYN,CLSQMT'}
     - type: Spacer
       properties: {height: 23}
       name: spacer_6
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,CWCOEF OMGCXX,FOYDPL
-          XPYUKW,GBAUQJ'}
+      layout_properties: {grid_position: 'UGMRFF,AHSXUN OMGCXX,FOYDPL XPYUKW,GBAUQJ'}
     - type: Label
       properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: 'SUBSCRIBE FOR UPDATES:', font_size: null, font: '',
-        spacing_above: none, icon_align: left, spacing_below: none, italic: false,
+        visible: true, text: 'SUBSCRIBE FOR NEW ART AND UPDATES:', font_size: null,
+        font: '', spacing_above: none, icon_align: left, spacing_below: none, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_9
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,CWCOEF OMGCXX,FOYDPL
-          APDOTD,CKMYMO'}
+      layout_properties: {grid_position: 'UGMRFF,AHSXUN OMGCXX,FOYDPL APDOTD,CKMYMO'}
     - type: Spacer
       properties: {height: 32}
       name: spacer_2
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,CWCOEF OMGCXX,RAXXDE'}
+      layout_properties: {grid_position: 'UGMRFF,AHSXUN OMGCXX,RAXXDE'}
     - type: FlowPanel
       properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
         foreground: '', visible: true, spacing_above: small, spacing_below: small,
         background: ''}
       name: flow_panel_2
-      layout_properties: {grid_position: 'UGMRFF,AHSXUN WLZBCS,CWCOEF YDVRTJ,VMFNGH'}
+      layout_properties: {grid_position: 'UGMRFF,AHSXUN YDVRTJ,VMFNGH'}
       components:
       - type: TextBox
         properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter your email,
@@ -220,14 +195,6 @@ components:
       icon: 'fa:instagram'}
     name: insta_link
     layout_properties: {}
-  - type: Link
-    properties: {role: null, url: 'https://twitter.com/anvil_works', align: center,
-      tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: null,
-      wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left,
-      col_widths: '', spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:twitter'}
-    name: link_1
-    layout_properties: {}
   - type: Spacer
     properties: {height: 32}
     name: spacer_1
@@ -243,9 +210,9 @@ components:
     event_bindings: {click: cart_link_click}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: Cupcakes & Co., font_size: 24, font: Yeseva One, spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
+    visible: true, text: BronwenCoussens Pottery, font_size: 24, font: Yeseva One,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: title}
 - type: ColumnPanel
@@ -298,14 +265,6 @@ components:
       icon: 'fa:instagram'}
     name: insta_link_copy
     layout_properties: {grid_position: 'THSJPT,KHHHKF'}
-  - type: Link
-    properties: {role: null, url: 'https://twitter.com/anvil_works', align: left,
-      tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: null,
-      wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left,
-      col_widths: '', spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: 'fa:twitter'}
-    name: link_1_copy
-    layout_properties: {grid_position: 'LAEWIU,HPXVZM'}
   - type: Link
     properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
       foreground: '', visible: true, text: VIEW CART, font_size: 16, wrap_on: mobile,
