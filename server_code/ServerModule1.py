@@ -8,6 +8,7 @@ import anvil.server
 from datetime import datetime
 import stripe
 import anvil.email
+import time
 
 @anvil.server.callable
 def add_message(name, email, message):
@@ -21,6 +22,9 @@ def add_subscriber(email):
   app_tables.subscribers.add_row(email=email)
   
 @anvil.server.callable
-def add_order(charge_id, cart_items):
-  app_tables.orders.add_row(charge_id=charge_id, order=cart_items)
+def add_order(charge_id, order, items):
+  app_tables.orders.add_row(charge_id=charge_id, order=order, date=datetime.now())
+  for i in items:
+    i['product']['available'] = False
+  print('order added with date and item removed from inv')
   

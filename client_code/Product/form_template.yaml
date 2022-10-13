@@ -53,4 +53,15 @@ components:
       underline: false, icon: 'fa:check-circle-o'}
     name: added_button
     layout_properties: {grid_position: 'XWJJFA,BTUFOG HLJDJV,HTXYRT'}
+    event_bindings: {click: added_button_click}
+  - type: Button
+    properties: {role: null, align: full, tooltip: '', border: '', enabled: true,
+      foreground: '#c16b25', visible: false, text: Item already Sold, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: 'theme:White', bold: false, underline: false, icon: 'fa:asterisk'}
+    name: added_button_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: PQMVOU,DZKXWR
+    event_bindings: {click: added_button_copy_click}
 is_package: true

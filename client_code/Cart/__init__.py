@@ -1,6 +1,5 @@
 from ._anvil_designer import CartTemplate
 from anvil import *
-import stripe.checkout
 import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
@@ -15,7 +14,8 @@ class Cart(CartTemplate):
     self.init_components(**properties)
     self.order = []
     self.items = items
-
+    print(self.items)
+      
     if not self.items:
       self.empty_cart_panel.visible = True
       self.column_panel_1.visible = False
@@ -41,20 +41,23 @@ class Cart(CartTemplate):
   def checkout_button_click(self, **event_args):
     """This method is called when the button is clicked"""  
     for i in self.items:
-      self.order.append({'name':i['product']['name'], 'quantity':i['quantity']})
+      self.order.append({'name':i['product']['name']})
     try:
       charge = stripe.checkout.charge(amount=self.subtotal*100,
-                                      currency="USD",
+                                      currency="GBP",
                                       shipping_address=True,
-                                      title="Cupcakes & Co.",
-                                      icon_url="_/theme/cupcake_logo.png")
+                                      title="Bronwen Coussens Ceramics",
+                                      )
+      print('stripe success')
     except:
+      print('Return call in checkout clicked')
       return
     
-    anvil.server.call('add_order', charge['charge_id'], self.order)
+    anvil.server.call('add_order', charge['charge_id'], self.order, self.items)
 
     get_open_form().cart_items = []
     get_open_form().cart_link_click()
+    
     Notification("Your order has been received!").show()
 
 

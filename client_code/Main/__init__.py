@@ -28,11 +28,8 @@ class Main(MainTemplate):
     
   def add_to_cart(self, product):
     #if item is already in cart, just update the quantity
-    for i in self.cart_items:
-      if i['product'] == product:
-        break
-    else:
-      self.cart_items.append({'product': product})
+    self.cart_items.append({'product': product})
+    print(self.cart_items)
     
   def navigate(self, active_link, form):
     for i in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.cart_link, self.blog_link]:
