@@ -117,11 +117,11 @@ components:
     layout_properties: {}
     event_bindings: {click: contact_link_click}
   - type: Link
-    properties: {role: null, url: 'https://www.instagram.com', align: center, tooltip: '',
-      border: '', foreground: '', visible: true, text: '', font_size: null, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: 'fa:instagram'}
+    properties: {role: null, url: 'https://www.instagram.com/bronwencoussens_ceramics/',
+      align: center, tooltip: '', border: '', foreground: '', visible: true, text: '',
+      font_size: null, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
+      icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '',
+      bold: false, underline: false, icon: 'fa:instagram'}
     name: insta_link
     layout_properties: {}
   - type: Spacer
