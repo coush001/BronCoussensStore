@@ -14,6 +14,12 @@ class OnlineGallery(OnlineGalleryTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
         
-    products = app_tables.products.search(available=True)
-    for p in products:
-      self.flow_panel_1.add_component(Product(item=p), width='30%')
+    available = app_tables.products.search(available=True)
+    
+    sold = app_tables.products.search(available=False)
+    
+    for item in available:
+      self.flow_panel_1.add_component(Product(item=item), width='30%')
+
+    for item in sold:
+      self.flow_panel_2.add_component(Product(item=item), width='30%')

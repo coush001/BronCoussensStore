@@ -18,10 +18,4 @@ class AddToCart(AddToCartTemplate):
     get_open_form().add_to_cart(self.item)
     self.add_button.visible = False
     self.added_button.visible = True
-    self.timer_1.interval = 1
         
-  def timer_1_tick(self, **event_args):
-    """This method is called Every [interval] seconds. Does not trigger if [interval] is 0."""
-    self.add_button.visible = True
-    self.added_button.visible = False
-    self.timer_1.interval = 0

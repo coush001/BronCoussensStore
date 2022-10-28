@@ -21,7 +21,6 @@ class Main(MainTemplate):
     self.init_components(**properties)
     self.navigate(self.home_link, Home())
     self.cart_items = []
-    print(self.subscribe_textbox.foreground)
     
     for link in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.insta_link, self.cart_link]:
       link.role = ['spaced-title', 'display-none-responsive']
@@ -34,6 +33,8 @@ class Main(MainTemplate):
   def navigate(self, active_link, form):
     for i in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.cart_link, self.blog_link]:
       i.foreground = 'theme:Primary 700'
+      i.background = 'theme:Secondary 500'
+    active_link.background = 'theme:White'
     active_link.foreground = 'theme:RichBlue'
     self.column_panel_1.clear()
     self.column_panel_1.add_component(form, full_width_row=True)

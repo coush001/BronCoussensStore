@@ -36,6 +36,13 @@ components:
   properties: {height: 49}
   name: spacer_1
   layout_properties: {grid_position: 'XOKNVO,PCSYFZ'}
+- type: Label
+  properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Available Work:', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'HPZEAZ,ZYPJWA'}
 - type: FlowPanel
   properties: {role: flow-flexer, spacing: medium, align: justify, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
@@ -46,4 +53,17 @@ components:
   properties: {height: 50}
   name: spacer_2
   layout_properties: {grid_position: 'CVHVKQ,NABFBO'}
+- type: Label
+  properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Past Work (Sold/Unavailable) :', font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
+  name: label_3_copy
+  layout_properties: {grid_position: 'IENLHY,HLBDMD'}
+- type: FlowPanel
+  properties: {role: flow-flexer, spacing: medium, align: justify, tooltip: '', border: '',
+    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  name: flow_panel_2
+  layout_properties: {grid_position: 'QTBVHO,RITBKI', full_width_row: true}
+  components: []
 is_package: true

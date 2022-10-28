@@ -59,7 +59,7 @@ components:
       foreground: '#c16b25', visible: false, text: Item already Sold, font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: 'theme:White', bold: false, underline: false, icon: 'fa:asterisk'}
-    name: added_button_copy
+    name: soldButton
     layout_properties:
       col_widths: {}
       grid_position: PQMVOU,DZKXWR

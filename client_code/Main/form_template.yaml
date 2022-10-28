@@ -44,23 +44,29 @@ components:
       name: label_9
       layout_properties: {grid_position: 'KRQCTR,RKNLPM', full_width_row: true, row_background: 'theme:Primary
           500'}
-    - type: TextBox
-      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter your email here,
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-        font: '', spacing_above: small, type: text, spacing_below: small, italic: true,
-        background: 'theme:Gray 600', bold: false, underline: false}
-      name: subscribe_textbox
-      layout_properties: {grid_position: 'KRQCTR,WWRIOI', width: 196.5, full_width_row: true,
-        row_background: 'theme:Primary 500'}
-    - type: Button
-      properties: {role: secondary-color, align: center, tooltip: '', border: '',
-        enabled: true, foreground: '', visible: true, text: submit, font_size: null,
-        font: '', spacing_above: small, icon_align: top, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: subscribe_button
-      layout_properties: {grid_position: 'KRQCTR,DWQDEI', full_width_row: true, row_background: 'theme:Primary
-          500'}
-      event_bindings: {click: subscribe_button_click}
+    - type: ColumnPanel
+      properties: {col_widths: '{}'}
+      name: column_panel_2
+      layout_properties: {grid_position: 'KRQCTR,WWRIOI', row_background: 'theme:Primary
+          500', full_width_row: true}
+      components:
+      - type: TextBox
+        properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter your email here,
+          border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+          font: '', spacing_above: small, type: text, spacing_below: small, italic: true,
+          background: 'theme:Gray 600', bold: false, underline: false}
+        name: subscribe_textbox
+        layout_properties: {grid_position: 'QWGUVL,GQOJND', width: 196.5, full_width_row: true,
+          row_background: 'theme:Primary 500'}
+      - type: Button
+        properties: {role: secondary-color, align: center, tooltip: '', border: '',
+          enabled: true, foreground: '', visible: true, text: submit, font_size: null,
+          font: '', spacing_above: small, icon_align: top, spacing_below: small, italic: false,
+          background: '', bold: false, underline: false, icon: ''}
+        name: subscribe_button
+        layout_properties: {grid_position: 'QWGUVL,GUAAMC', full_width_row: true,
+          row_background: 'theme:Primary 500'}
+        event_bindings: {click: subscribe_button_click}
   - type: XYPanel
     properties: {height: 66, width: 605}
     name: xy_panel_1
