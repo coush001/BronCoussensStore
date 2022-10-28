@@ -71,78 +71,6 @@ components:
     properties: {height: 66, width: 605}
     name: xy_panel_1
     layout_properties: {grid_position: 'ESYEID,RBAYKQ'}
-- type: FlowPanel
-  properties: {role: null, spacing: none, align: right, tooltip: '', border: '', foreground: '',
-    visible: true, spacing_above: small, spacing_below: small, background: ''}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
-  components:
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: HOME, font_size: 16, wrap_on: mobile, font: '',
-      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: home_link
-    layout_properties: {}
-    event_bindings: {click: home_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: ABOUT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: about_link
-    layout_properties: {}
-    event_bindings: {click: about_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: BLOG, font_size: 16, wrap_on: mobile, font: '',
-      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: blog_link
-    layout_properties: {}
-    event_bindings: {click: blog_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: ONLINE GALLERY, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: shop_link
-    layout_properties: {}
-    event_bindings: {click: shop_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: CONTACT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: contact_link
-    layout_properties: {}
-    event_bindings: {click: contact_link_click}
-  - type: Link
-    properties: {role: null, url: 'https://www.instagram.com/bronwencoussens_ceramics/',
-      align: center, tooltip: '', border: '', foreground: '', visible: true, text: '',
-      font_size: null, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
-      icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '',
-      bold: false, underline: false, icon: 'fa:instagram'}
-    name: insta_link
-    layout_properties: {}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_1
-    layout_properties: {width: 44}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: ART BASKET, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: 'fa:shopping-cart'}
-    name: cart_link
-    layout_properties: {}
-    event_bindings: {click: cart_link_click}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: Bronwen Coussens Ceramics, font_size: 24, font: Yeseva One,
@@ -150,3 +78,76 @@ components:
     bold: false, underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: title}
+- type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: 'theme:RichBlue'}
+  name: column_panel_3
+  layout_properties: {slot: left-nav}
+  components:
+  - type: Link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: HOME, font_size: 16, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: home_link
+    layout_properties: {grid_position: 'YSAWJK,NFIOKW'}
+    event_bindings: {click: home_link_click}
+    components: []
+  - type: Link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: ABOUT, font_size: 16, wrap_on: mobile,
+      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: about_link
+    layout_properties: {grid_position: 'CFZQST,BXZCQT'}
+    event_bindings: {click: about_link_click}
+  - type: Link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: CONTACT, font_size: 16, wrap_on: mobile,
+      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: contact_link
+    layout_properties: {grid_position: 'EVMYQM,VFOBYP'}
+    event_bindings: {click: contact_link_click}
+    components: []
+  - type: Link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: ONLINE GALLERY, font_size: 16, wrap_on: mobile,
+      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: shop_link
+    layout_properties: {grid_position: 'GUSECG,CFBJRM'}
+    event_bindings: {click: shop_link_click}
+    components: []
+  - type: Link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: ART BASKET, font_size: 16, wrap_on: mobile,
+      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: 'fa:shopping-cart'}
+    name: cart_link
+    layout_properties: {grid_position: 'KZOEKB,NLITBI'}
+    event_bindings: {click: cart_link_click}
+    components: []
+  - type: Link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: BLOG, font_size: 16, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: blog_link
+    layout_properties: {grid_position: 'DIABPL,GZDOUH'}
+    event_bindings: {click: blog_link_click}
+- type: Link
+  properties: {role: selected, url: 'https://www.instagram.com/bronwencoussens_ceramics/',
+    align: center, tooltip: '', border: '', foreground: '', visible: true, text: '',
+    font_size: null, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
+    icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '',
+    bold: true, underline: false, icon: 'fa:instagram'}
+  name: insta_link
+  layout_properties: {grid_position: 'LZQNVO,NCWRBC', slot: nav-right}
