@@ -14,7 +14,7 @@ services:
   client_config: {}
   server_config: {test_mode: true}
 startup: {type: form, module: Main}
-package_name: Shop_Template
+package_name: BCS
 allow_embedding: false
 name: BronwenCoussensStore
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
