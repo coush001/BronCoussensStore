@@ -16,10 +16,10 @@ services:
 startup: {type: form, module: Main}
 package_name: Shop_Template
 allow_embedding: false
-name: BronwenCoussens
+name: BronwenCoussensStore
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {title: BC  Ceramics, logo_img: 'asset:closepot.png', description: Bronwen Coussens Ceramics}
+metadata: {title: B. Coussens, logo_img: 'asset:closepot.png', description: Bronwen Coussens Ceramics}
 startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Yeseva+One&display=swap"
     rel="stylesheet">'}
