@@ -47,15 +47,15 @@ db_schema:
     - name: img
       admin_ui: {width: 200}
       type: media
+    - name: timeadded
+      admin_ui: {width: 200}
+      type: datetime
     - name: promote
       admin_ui: {width: 200}
       type: bool
     - name: available
       admin_ui: {width: 200}
       type: bool
-    - name: timeadded
-      admin_ui: {width: 200}
-      type: datetime
   contact:
     title: Contact
     client: none
@@ -86,13 +86,28 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: charge_id
-      admin_ui: {width: 333}
+    - name: stripe
+      admin_ui: {width: 399}
       type: string
     - name: order
-      admin_ui: {width: 312}
+      admin_ui: {width: 454}
       type: simpleObject
     - name: date
-      admin_ui: {width: 200}
+      admin_ui: {width: 282}
       type: datetime
+    - name: charge_id
+      admin_ui: {width: 386}
+      type: string
+    - name: potcost
+      admin_ui: {}
+      type: number
+    - name: shipping
+      admin_ui: {}
+      type: number
+    - name: totalcost
+      admin_ui: {}
+      type: number
+    - name: shipaddress
+      admin_ui: {width: 200}
+      type: string
 renamed: true

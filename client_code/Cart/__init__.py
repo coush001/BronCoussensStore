@@ -14,7 +14,8 @@ class Cart(CartTemplate):
     self.init_components(**properties)
     self.order = []
     self.items = items
-    print(self.items)
+
+    self.shipping_fee = 0
       
     if not self.items:
       self.empty_cart_panel.visible = True
@@ -25,11 +26,8 @@ class Cart(CartTemplate):
     self.subtotal = sum(item['product']['price'] for item in self.items)
     self.subtotal_label.text = f"£{self.subtotal:.02f}"
     
-    if self.subtotal >= 200: #free shipping for orders over 200
-      self.shipping_label.text = 'FREE'     
-    else: #add £15 shipping
-      self.shipping_label.text = "£15.00"
-      self.subtotal = self.subtotal + 15
+    self.shipping_label.text = "£TBC"
+    self.total = self.subtotal + self.shipping_fee
       
     self.total_label.text = f"£{self.subtotal:.02f}"
       
@@ -42,8 +40,12 @@ class Cart(CartTemplate):
     """This method is called when the button is clicked"""  
     for i in self.items:
       self.order.append({'name':i['product']['name']})
+
+    shipaddress = TextArea()
+    confirm(content=shipaddress, title='Please enter your shipping address:',large=True)
+    
     try:
-      charge = stripe.checkout.charge(amount=self.subtotal*100,
+      charge = stripe.checkout.charge(amount=self.total*100,
                                       currency="GBP",
                                       shipping_address=True,
                                       title="Bronwen Coussens Ceramics",
@@ -53,8 +55,9 @@ class Cart(CartTemplate):
       print('Return call in checkout clicked')
       return
     
-    anvil.server.call('add_order', charge['charge_id'], self.order, self.items)
-
+    anvil.server.call('add_order', charge['charge_id'], self.order, self.items, self.shipping_fee, self.subtotal, self.total, str(charge.items()), shipaddress.text)
+          
+    
     get_open_form().cart_items = []
     get_open_form().cart_link_click()
     
