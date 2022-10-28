@@ -243,8 +243,9 @@ input.anvil-component::placeholder {
 }
 
 .nav-holder .left-nav {
+  color: "theme: Neutral"
   position: relative;
-  flex-shrink: 0;
+  flex-shrink: 10;
   min-width: 160px;
   max-width: 400px;
 }
@@ -257,11 +258,11 @@ input.anvil-component::placeholder {
 
 @media(min-width: 901px) {
   .left-nav {
-    display: none !important;
+    display: default !important;
   }
   
   .sidebar-toggle {
-    display: none !important;
+    display: default !important;
   }
 }
 
