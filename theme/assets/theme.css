@@ -202,6 +202,7 @@ input.anvil-component::placeholder {
 .nav-holder {
   flex-grow: 1;
   overflow-y: auto;
+  color: "theme: Neutral"
 }
 
 @media print {
@@ -240,6 +241,7 @@ input.anvil-component::placeholder {
 .nav-holder {
   display: flex;
   flex-direction: row;
+  color: "theme: Neutral"
 }
 
 .nav-holder .left-nav {
@@ -252,12 +254,14 @@ input.anvil-component::placeholder {
 
 .nav-shield {
   display: none;
+  color: "theme: Neutral"
 }
 
 /* Mobile: Nav bar is a modal overlay */
 
 @media(min-width: 901px) {
   .left-nav {
+    color: "theme: Neutral" !important;
     display: default !important;
   }
   
@@ -295,7 +299,7 @@ input.anvil-component::placeholder {
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: rgba(0,0,0,0.2);
+    color: "theme: Neutral" !important;
   }
  }
 
@@ -306,13 +310,14 @@ input.anvil-component::placeholder {
   border-right: 1px solid #e0e0e0;
   font-size: 14px;
   font-weight: 500;
-  color: rgba(0,0,0,0.87);
+  color: "theme: Neutral" !important;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .left-nav-placeholder {
   display: block;
+  color: "theme: Neutral" !important;
   padding: 8px;
   line-height: 1;
   width: 58px;
@@ -365,7 +370,7 @@ input.anvil-component::placeholder {
 */
 
 .left-nav a, .left-nav .anvil-label.left_edge-icon, .left-nav .anvil-label.right_edge-icon {
-  color: rgba(0,0,0,0.87);
+  color: "theme: Neutral" !important;
   margin: 0 -16px;
   padding: 4px 16px;
 }
