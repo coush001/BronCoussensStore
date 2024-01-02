@@ -48,7 +48,7 @@ class Cart(CartTemplate):
       charge = stripe.checkout.charge(amount=self.total*100,
                                       currency="GBP",
                                       shipping_address=True,
-                                      title="Bronwen Coussens Ceramics",
+                                      title="B. Coussens Ceramics",
                                       )
       print('stripe success')
     except:
@@ -57,7 +57,6 @@ class Cart(CartTemplate):
     
     anvil.server.call('add_order', charge['charge_id'], self.order, self.items, self.shipping_fee, self.subtotal, self.total, str(charge.items()), shipaddress.text)
           
-    
     get_open_form().cart_items = []
     get_open_form().cart_link_click()
     
