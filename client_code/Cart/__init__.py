@@ -15,7 +15,7 @@ class Cart(CartTemplate):
     self.order = []
     self.items = items
 
-    self.shipping_fee = 0
+    self.shipping_fee = 0 #14.99
       
     if not self.items:
       self.empty_cart_panel.visible = True
@@ -42,7 +42,7 @@ class Cart(CartTemplate):
       self.order.append({'name':i['product']['name']})
 
     shipaddress = TextArea()
-    confirm(content=shipaddress, title='Please enter your shipping address:',large=True)
+    alert(content=shipaddress, title='Please enter your contact email (for order dispatch updates):',large=True)
     
     try:
       charge = stripe.checkout.charge(amount=self.total*100,
@@ -51,8 +51,8 @@ class Cart(CartTemplate):
                                       title="B. Coussens Ceramics",
                                       )
       print('stripe success')
-    except:
-      print('Return call in checkout clicked')
+    except Exception as e:
+      print(e.message, e.args)
       return
     
     anvil.server.call('add_order', charge['charge_id'], self.order, self.items, self.shipping_fee, self.subtotal, self.total, str(charge.items()), shipaddress.text)

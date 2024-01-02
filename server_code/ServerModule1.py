@@ -26,7 +26,7 @@ def add_order(charge_id, order, items, shipping, potcost, total, stripe, shipadd
   app_tables.orders.add_row(charge_id=charge_id, order=order, date=datetime.now(), shipping=shipping, potcost=potcost, totalcost=total, stripe=stripe, shipaddress=shipaddress)
   for i in items:
     i['product']['available'] = False
-  print('order added with date and item removed from inv')
+  print('Order added with date and item removed from inv')
 
 
   anvil.email.send(from_name="BronwenCoussensCeramics: New Order!",
