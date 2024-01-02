@@ -17,40 +17,21 @@ components:
   layout_properties: {grid_position: 'DAFGHS,RUBFIA VNUOYF,KIRLOX'}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Black',
-    visible: true, text: Heading 1, font_size: 20, font: '', spacing_above: small,
+    visible: true, text: More detail coming soon..., font_size: 20, font: '', spacing_above: small,
     icon_align: left, spacing_below: none, italic: true, background: '', bold: false,
     underline: false, icon: ''}
   name: label_4
   layout_properties: {grid_position: 'DAFGHS,RUBFIA AUPCBW,MCFAID'}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-      700', visible: true, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Phasellus consequat sem purus, ultrices hendrerit nunc gravida sit amet.
-      Aliquam et fringilla neque, vel tincidunt nibh. Vestibulum accumsan aliquam
-      diam, vitae viverra nunc blandit in.  Donec facilisis vehicula ornare. Ut neque
-      quam, porta sit amet ante et, porta mollis felis. Aliquam et fringilla neque,
-      vel tincidunt nibh. Vestibulum accumsan aliquam diam, vitae viverra nunc blandit
-      in. Donec facilisis vehicula ornare. ', font_size: 16, font: '', spacing_above: none,
+      700', visible: true, text: '', font_size: 16, font: '', spacing_above: none,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
     underline: false, icon: ''}
   name: label_2
   layout_properties: {grid_position: 'DAFGHS,RUBFIA ZLCIDV,UYVXDN'}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-      700', visible: true, text: Another subheading goes here., font_size: 20, font: '',
-    spacing_above: medium, icon_align: left, spacing_below: none, italic: true, background: '',
-    bold: false, underline: false, icon: ''}
-  name: label_5
-  layout_properties: {grid_position: 'DAFGHS,RUBFIA ITHUQD,UMALBI'}
-- type: Label
-  properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-      700', visible: true, text: ' Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit. Phasellus consequat sem purus, ultrices hendrerit nunc gravida sit amet.
-      Aliquam et fringilla neque, vel tincidunt nibh. Donec facilisis vehicula ornare.
-      Ut neque quam, porta sit amet ante et, porta mollis felis. Aliquam et fringilla
-      neque, vel tincidunt nibh. Vestibulum accumsan aliquam diam, vitae viverra nunc
-      blandit in. Donec facilisis vehicula ornare.  Vestibulum accumsan aliquam diam,
-      vitae viverra nunc blandit in. ', font_size: 16, font: '', spacing_above: none,
+      700', visible: true, text: '', font_size: 16, font: '', spacing_above: none,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
     underline: false, icon: ''}
   name: label_3
