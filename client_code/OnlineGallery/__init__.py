@@ -27,9 +27,9 @@ class OnlineGallery(OnlineGalleryTemplate):
     
     for item in available:
       if cart_items and item.get_id() in cart_items:
-        self.flow_panel_1.add_component(Product(item=item, cart=True), width='50%')
+        self.flow_panel_1.add_component(Product(item=item, cart=True), width='90%')
       else:
-        self.flow_panel_1.add_component(Product(item=item), width='50%')
+        self.flow_panel_1.add_component(Product(item=item), width='90%')
 
     for item in sold:
       self.flow_panel_2.add_component(Product(item=item), width='30%')

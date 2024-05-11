@@ -39,10 +39,10 @@ class Main(MainTemplate):
     
   def navigate(self, active_link, form):
     for i in [self.home_link, self.shop_link, self.cart_link, self.contact_link]:
-      i.foreground = 'theme:Primary 700'
-      i.background = 'theme:Secondary 500'
+      i.foreground = 'theme:White'
+      i.background = 'theme:Neutral'
     active_link.background = 'theme:White'
-    active_link.foreground = 'theme:RichBlue'
+    active_link.foreground = 'theme:Grey'
     self.column_panel_1.clear()
     self.column_panel_1.add_component(form, full_width_row=True)
 

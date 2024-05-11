@@ -10,10 +10,10 @@ components:
   layout_properties: {grid_position: 'TSNUCH,CFILMX', full_width_row: true}
   components:
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
       visible: true, text: Looks like there's nothing in your cart right now., font_size: 16,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     name: empty_cart_label
     layout_properties: {grid_position: 'JPOURI,RFTNMJ'}
   - type: Button
@@ -33,21 +33,26 @@ components:
     wrap_on: mobile, col_spacing: huge, spacing_above: small, col_widths: '{"SLTMFK":35,"LNYVOQ":55,"KDNCGX":5,"OUGYMD":35}',
     spacing_below: small, background: ''}
   name: column_panel_1
-  layout_properties: {grid_position: 'AVZCLG,PXSZVB', full_width_row: true}
+  layout_properties: {grid_position: 'SEZUCT,TJGUQH'}
   components:
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Primary
-        700', visible: true, text: My Cart, font_size: 20, font: Yeseva One, spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_1
-    layout_properties: {grid_position: 'OUWTBH,SLTMFK HUQMJY,OOKOKD'}
-  - type: RepeatingPanel
-    properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-      visible: true, spacing_above: small, spacing_below: small, item_template: Cart.ItemTemplate1,
-      background: ''}
-    name: repeating_panel_1
+  - name: column_panel_3
+    properties: {background: 'theme:White'}
+    type: ColumnPanel
     layout_properties: {grid_position: 'OUWTBH,SLTMFK ASILEX,LNYVOQ'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: 'My Cart:', font_size: 20, font: Yeseva One,
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'ZPUMKO,AXJUVV'}
+    - type: RepeatingPanel
+      properties: {role: null, tooltip: '', border: '', foreground: 'theme:White',
+        items: null, visible: true, spacing_above: small, spacing_below: small, item_template: Cart.ItemTemplate1,
+        background: ''}
+      name: repeating_panel_1
+      layout_properties: {grid_position: 'HOXWCM,XTLQLG'}
   - type: Spacer
     properties: {height: 32}
     name: spacer_2
@@ -60,8 +65,8 @@ components:
     layout_properties: {grid_position: 'OUWTBH,OUGYMD SCMBNG,AGGOUS'}
     components:
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Primary
-          700', visible: true, text: Order Summary, font_size: 20, font: Yeseva One,
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: Order Summary, font_size: 20, font: Yeseva One,
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
       name: label_2
@@ -102,8 +107,8 @@ components:
         name: shipping_label
         layout_properties: {grid_position: 'DWJVOH,KTOQXU'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: 'Total:', font_size: 20, font: '', spacing_above: small,
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+          600', visible: true, text: 'Total:', font_size: 20, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_5
