@@ -13,13 +13,19 @@ class OnlineGallery(OnlineGalleryTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-        
-    available = app_tables.products.search(available=True)
     
+    available = app_tables.products.search(available=True)  
     sold = app_tables.products.search(available=False)
     
+    self.cart = get_open_form().get_cart()
+    cart_items = [i['product'].get_id() for i in self.cart]
+    print('User has opened gallery, the cart contains:', cart_items)
+    
     for item in available:
-      self.flow_panel_1.add_component(Product(item=item), width='30%')
+      if item.get_id() in cart_items:
+        self.flow_panel_1.add_component(Product(item=item, cart=True), width='50%')
+      else:
+        self.flow_panel_1.add_component(Product(item=item), width='50%')
 
     for item in sold:
       self.flow_panel_2.add_component(Product(item=item), width='30%')

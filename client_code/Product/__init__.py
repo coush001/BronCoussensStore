@@ -10,13 +10,15 @@ from anvil.tables import app_tables
 from ..expandedItem import expandedItem
 
 class Product(ProductTemplate):
-  def __init__(self, **properties):
+  def __init__(self, cart=False, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     if self.item['available'] is False:
       self.soldButton.visible = True
       self.add_button.visible = False
       self.added_button.visible = False
+    if cart==True:
+      self.add_()
     # Any code you write here will run when the form opens.
 
   def add_(self, **event_args):

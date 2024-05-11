@@ -28,11 +28,11 @@ class Main(MainTemplate):
   def add_to_cart(self, product):
     #if item is already in cart, just update the quantity
     self.cart_items.append({'product': product})
-    print(self.cart_items)
+    print('Adding item to cart:', product)
 
   def remove_from_cart(self, product):
     self.cart_items.remove({'product': product})
-    print(self.cart_items)
+    print('removing from cart:', product)
   
   def get_cart(self):
     return self.cart_items
