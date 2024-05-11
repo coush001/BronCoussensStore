@@ -12,14 +12,19 @@ import time
 
 @anvil.server.callable
 def add_message(name, email, message):
-  app_tables.contact.add_row(name=name, email=email, message=message, date=datetime.now())
-  anvil.email.send(from_name="Contact Form", 
-                   subject="New Web Contact",
-                   text=f"New web contact from {name} ({email})\nMessage: {message}")
+  app_tables.websitecontact.add_row(name=name, email=email, message=message, date=datetime.now())
+  anvil.email.send(from_name="BronwenCoussensCeramics: New website contact!",
+            to="hbcoussens@gmail.com",
+            subject="BronwenCoussensCeramics: New website contact!!",
+            text=f"New web contact from {name} ({email})\nMessage: {message}")
   
 @anvil.server.callable
 def add_subscriber(email):
-  app_tables.subscribers.add_row(email=email)
+  app_tables.subscribers.add_row(email=email, date_added=datetime.now())
+  anvil.email.send(from_name="BronwenCoussensCeramics: New request for subscription",
+          to="hbcoussens@gmail.com",
+          subject="BronwenCoussensCeramics: New request for subscription!!",
+          text=f"New web sub request:  ({email})\n")
   
 @anvil.server.callable
 def add_order(charge_id, order, items, shipping, potcost, total, stripe, shipaddress):

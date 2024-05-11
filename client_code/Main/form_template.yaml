@@ -11,6 +11,11 @@ components:
   layout_properties: {slot: default}
   name: content_panel
   components:
+  - name: flow_panel_1
+    properties: {}
+    type: FlowPanel
+    layout_properties: {grid_position: 'QCURUV,XKEJAB'}
+    components: []
   - type: ColumnPanel
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
       wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}',
@@ -65,8 +70,13 @@ components:
           row_background: 'theme:Primary 500'}
         event_bindings: {click: subscribe_button_click}
         name: subscribe_button
+  - name: label_2
+    properties: {text: Website built by Hugo Coussens, foreground: 'theme:White',
+      italic: true}
+    type: Label
+    layout_properties: {grid_position: 'XCQALY,ZCUAYN'}
   - type: XYPanel
-    properties: {height: 66, width: 605}
+    properties: {height: 47.56768798828125, width: 605}
     layout_properties: {grid_position: 'ESYEID,RBAYKQ'}
     name: xy_panel_1
 - type: Label
@@ -76,72 +86,47 @@ components:
     bold: false, underline: false, icon: ''}
   layout_properties: {slot: title}
   name: label_1
-- type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-    spacing_below: small, background: 'theme:RichBlue'}
-  layout_properties: {slot: left-nav}
-  name: column_panel_3
+- name: flow_panel_2
+  properties: {}
+  type: FlowPanel
+  layout_properties: {slot: nav-right}
   components:
   - type: Link
     properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: HOME, font_size: 16, wrap_on: mobile, font: '',
+      foreground: '', visible: true, text: HOME, font_size: 16, wrap_on: never, font: '',
       col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
-    layout_properties: {grid_position: 'YSAWJK,NFIOKW'}
+    layout_properties: {}
     event_bindings: {click: home_link_click}
     name: home_link
-  - type: Link
+  - name: shop_link
     properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: ABOUT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      foreground: '', visible: true, text: ONLINE GALLERY, font_size: 16, wrap_on: mobile,
+      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
-    layout_properties: {grid_position: 'CFZQST,BXZCQT'}
-    event_bindings: {click: about_link_click}
-    name: about_link
+    type: Link
+    layout_properties: {}
+    event_bindings: {click: shop_link_click}
+  - name: cart_link
+    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+      foreground: '', visible: true, text: CHECKOUT, font_size: 16, wrap_on: mobile,
+      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    type: Link
+    layout_properties: {}
+    event_bindings: {click: cart_link_click}
   - type: Link
     properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
       foreground: '', visible: true, text: CONTACT, font_size: 16, wrap_on: mobile,
       font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
       spacing_below: small, italic: false, background: '', bold: false, underline: false,
       icon: ''}
-    layout_properties: {grid_position: 'EVMYQM,VFOBYP'}
     event_bindings: {click: contact_link_click}
     name: contact_link
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: ONLINE GALLERY, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    layout_properties: {grid_position: 'GUSECG,CFBJRM'}
-    event_bindings: {click: shop_link_click}
-    name: shop_link
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: CHECKOUT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: 'fa:shopping-cart'}
-    layout_properties: {grid_position: 'KZOEKB,NLITBI'}
-    event_bindings: {click: cart_link_click}
-    name: cart_link
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: '', visible: true, text: BLOG, font_size: 16, wrap_on: mobile, font: '',
-      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    layout_properties: {grid_position: 'DIABPL,GZDOUH'}
-    event_bindings: {click: blog_link_click}
-    name: blog_link
-- type: Link
-  properties: {role: selected, url: 'https://www.instagram.com/bronwencoussens_ceramics/',
-    align: center, tooltip: '', border: '', foreground: '', visible: true, text: '',
-    font_size: null, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
-    icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '',
-    bold: true, underline: false, icon: 'fa:instagram'}
-  layout_properties: {grid_position: 'LZQNVO,NCWRBC', slot: nav-right}
-  name: insta_link
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {width: 181.41846875}

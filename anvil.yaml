@@ -12,7 +12,7 @@ services:
     stripe_user_id: acct_1LsVFaIOiPmFV0YZ}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
-  server_config: {test_mode: true}
+  server_config: {test_mode: false}
 startup: {type: form, module: Main}
 package_name: BCS
 allow_embedding: false
@@ -56,8 +56,48 @@ db_schema:
     - name: available
       admin_ui: {width: 200}
       type: bool
-  contact:
-    title: Contact
+  subscribers:
+    title: Subscribers
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 491}
+      type: string
+    - name: date_added
+      admin_ui: {width: 200, order: 1}
+      type: datetime
+  orders:
+    title: Orders
+    client: none
+    server: full
+    columns:
+    - name: stripe
+      admin_ui: {order: 0, width: 578}
+      type: string
+    - name: order
+      admin_ui: {width: 454}
+      type: simpleObject
+    - name: date
+      admin_ui: {width: 282}
+      type: datetime
+    - name: charge_id
+      admin_ui: {order: 2.5, width: 169}
+      type: string
+    - name: potcost
+      admin_ui: {}
+      type: number
+    - name: shipping
+      admin_ui: {}
+      type: number
+    - name: totalcost
+      admin_ui: {}
+      type: number
+    - name: shipaddress
+      admin_ui: {width: 200}
+      type: string
+  websitecontact:
+    title: WebsiteContact
     client: none
     server: full
     columns:
@@ -73,41 +113,4 @@ db_schema:
     - name: date
       admin_ui: {width: 200}
       type: datetime
-  subscribers:
-    title: Subscribers
-    client: none
-    server: full
-    columns:
-    - name: email
-      admin_ui: {width: 491}
-      type: string
-  orders:
-    title: Orders
-    client: none
-    server: full
-    columns:
-    - name: stripe
-      admin_ui: {width: 399}
-      type: string
-    - name: order
-      admin_ui: {width: 454}
-      type: simpleObject
-    - name: date
-      admin_ui: {width: 282}
-      type: datetime
-    - name: charge_id
-      admin_ui: {width: 386}
-      type: string
-    - name: potcost
-      admin_ui: {}
-      type: number
-    - name: shipping
-      admin_ui: {}
-      type: number
-    - name: totalcost
-      admin_ui: {}
-      type: number
-    - name: shipaddress
-      admin_ui: {width: 200}
-      type: string
 renamed: true

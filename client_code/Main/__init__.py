@@ -22,16 +22,23 @@ class Main(MainTemplate):
     self.navigate(self.home_link, Home())
     self.cart_items = []
     
-    for link in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.insta_link, self.cart_link]:
+    for link in [self.home_link, self.shop_link, self.cart_link, self.contact_link]:
       link.role = ['spaced-title', 'display-none-responsive']
     
   def add_to_cart(self, product):
     #if item is already in cart, just update the quantity
     self.cart_items.append({'product': product})
     print(self.cart_items)
+
+  def remove_from_cart(self, product):
+    self.cart_items.remove({'product': product})
+    print(self.cart_items)
+  
+  def get_cart(self):
+    return self.cart_items
     
   def navigate(self, active_link, form):
-    for i in [self.home_link, self.shop_link, self.about_link, self.contact_link, self.cart_link, self.blog_link]:
+    for i in [self.home_link, self.shop_link, self.cart_link, self.contact_link]:
       i.foreground = 'theme:Primary 700'
       i.background = 'theme:Secondary 500'
     active_link.background = 'theme:White'
