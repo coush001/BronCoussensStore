@@ -16,13 +16,17 @@ class OnlineGallery(OnlineGalleryTemplate):
     
     available = app_tables.products.search(available=True)  
     sold = app_tables.products.search(available=False)
-    
-    self.cart = get_open_form().get_cart()
-    cart_items = [i['product'].get_id() for i in self.cart]
-    print('User has opened gallery, the cart contains:', cart_items)
+
+    try:
+      self.cart = get_open_form().get_cart()
+      cart_items = [i['product'].get_id() for i in self.cart]
+      print('User has opened gallery, the cart contains:', cart_items)
+    except:
+      print('failed to get_cart')
+      cart_items = False
     
     for item in available:
-      if item.get_id() in cart_items:
+      if cart_items and item.get_id() in cart_items:
         self.flow_panel_1.add_component(Product(item=item, cart=True), width='50%')
       else:
         self.flow_panel_1.add_component(Product(item=item), width='50%')

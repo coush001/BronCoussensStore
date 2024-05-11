@@ -14,12 +14,8 @@ components:
     name: transparent_box_1
     layout_properties: {grid_position: 'VHCTHW,HLWACT'}
     components:
-    - name: spacer_4
-      properties: {height: '2.25'}
-      type: Spacer
-      layout_properties: {grid_position: 'KWCASI,ASRHWS', row_background: 'theme:White'}
     - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
+      properties: {role: logo, align: center, tooltip: '', border: '', foreground: white,
         visible: true, text: My current portfolio of work, font_size: 42, font: Yeseva One,
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '', bold: false, underline: false, icon: ''}
@@ -29,13 +25,9 @@ components:
       properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
         visible: true, text: Please contact me if you are interested in commissioning something specific,
         font_size: 20, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: false, background: '', bold: false, underline: false, icon: ''}
+        italic: true, background: '', bold: false, underline: false, icon: ''}
       name: label_2
       layout_properties: {grid_position: 'TVRTSG,VLCOXJ'}
-    - name: spacer_3
-      properties: {height: 2.25}
-      type: Spacer
-      layout_properties: {grid_position: 'PFPFOH,WOKOMF', row_background: 'theme:White'}
 - type: Spacer
   properties: {height: 49}
   name: spacer_1
