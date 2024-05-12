@@ -38,9 +38,6 @@ db_schema:
     - name: description
       admin_ui: {width: 190}
       type: string
-    - name: storyinspiration
-      admin_ui: {width: 200}
-      type: string
     - name: price
       admin_ui: {width: 200}
       type: number

@@ -22,7 +22,7 @@ components:
   data_bindings:
   - {property: text, code: 'self.item[''name'']'}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
     visible: true, text: '', font_size: 16, font: '', spacing_above: none, icon_align: left,
     spacing_below: none, italic: false, background: '', bold: false, underline: false,
     icon: ''}
