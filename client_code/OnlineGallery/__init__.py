@@ -33,3 +33,8 @@ class OnlineGallery(OnlineGalleryTemplate):
 
     for item in sold:
       self.flow_panel_2.add_component(Product(item=item), width='30%')
+
+  def cart_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    get_open_form().cart_link_click()
+    pass

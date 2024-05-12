@@ -17,10 +17,7 @@ class About(AboutTemplate):
     self.init_components(**properties)
     self.map_1.center = GoogleMap.LatLng(51.5374, -0.9003)
     self.map_1.zoom = 13
-    # Create an iframe element and set the src
-    iframe = jQuery("<iframe width='100%' height='800px'>").attr("src","https://www.whereinspirationblooms.co.uk/post/baw21-bronwen-coussens-ceramic-artist")
-    # Append the iframe to a container in our form
-    iframe.appendTo(get_dom_node(self.content_panel77))
+
 
   def button_1_click(self, **event_args):
     print(self.map_1.map_data.to_geo_json())

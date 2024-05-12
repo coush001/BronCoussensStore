@@ -27,7 +27,7 @@ class Contact(ContactTemplate):
       alert("Thanks for getting in touch!")
     else:
       alert("Please fill out the entire form before sending your message")
-      
+
 
 
 

@@ -12,7 +12,6 @@ from ..OnlineGallery import OnlineGallery
 from ..Contact import Contact
 from ..About import About
 from ..Cart import Cart
-from ..Blog import Blog
 
 
 class Main(MainTemplate):
@@ -54,9 +53,6 @@ class Main(MainTemplate):
     """This method is called when the link is clicked"""
     self.navigate(self.shop_link, OnlineGallery())
 
-  def blog_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    self.navigate(self.blog_link, Blog())
 
   def about_link_click(self, **event_args):
     """This method is called when the link is clicked"""

@@ -3,46 +3,39 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: ColumnPanel
-  properties: {role: shop-header, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: small,
-    background: ''}
-  name: card_1
-  layout_properties: {grid_position: 'TTQHVZ,ATRGWS'}
+  properties: {role: transparent-box, col_widths: '{}', spacing_above: none, spacing_below: none}
+  name: transparent_box_1
+  layout_properties: {grid_position: 'GAIQUF,AZOBZF'}
   components:
-  - type: ColumnPanel
-    properties: {role: transparent-box, col_widths: '{}', spacing_above: none, spacing_below: none}
-    name: transparent_box_1
-    layout_properties: {grid_position: 'VHCTHW,HLWACT'}
-    components:
-    - type: Label
-      properties: {role: logo, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: My current portfolio of work, font_size: 42, font: Yeseva One,
-        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false, icon: ''}
-      name: label_1
-      layout_properties: {grid_position: 'IGPKYD,PNOVMP'}
-    - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: Please contact me if you are interested in commissioning something specific,
-        font_size: 20, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-        italic: true, background: '', bold: false, underline: false, icon: ''}
-      name: label_2
-      layout_properties: {grid_position: 'TVRTSG,VLCOXJ'}
-- type: Spacer
-  properties: {height: 49}
-  name: spacer_1
-  layout_properties: {grid_position: 'XOKNVO,PCSYFZ'}
+  - type: Label
+    properties: {role: logo, align: center, tooltip: '', border: '', foreground: white,
+      visible: true, text: My current portfolio of work, font_size: 28, font: Yeseva One,
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'IGPKYD,PNOVMP'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
+      visible: true, text: Please contact me if you are interested in commissioning something specific,
+      font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: true, background: '', bold: false, underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'TVRTSG,VLCOXJ'}
 - type: Label
   properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Gray
-      100', visible: true, text: 'Available:', font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
+      100', visible: true, text: 'Available:', font_size: null, font: Yeseva One,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
   name: label_3
   layout_properties: {grid_position: 'QVNRBM,ZSCFDE'}
 - name: spacer_5
   properties: {height: -0.26171875}
   type: Spacer
   layout_properties: {grid_position: 'IKJKAE,VLSRVZ', row_background: 'theme:White'}
+- name: spacer_1
+  properties: {height: 17.3076171875}
+  type: Spacer
+  layout_properties: {grid_position: 'ZPJFXV,EZWDXL'}
 - type: FlowPanel
   properties: {role: flow-flexer, spacing: medium, align: justify, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
@@ -53,17 +46,38 @@ components:
   properties: {height: 50}
   name: spacer_2
   layout_properties: {grid_position: 'CVHVKQ,NABFBO'}
+- name: label_5
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'RXXBCD,PBQHFR'}
+- name: cart_link
+  properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
+    foreground: 'theme:White', visible: true, text: CHECKOUT, font_size: 16, wrap_on: mobile,
+    font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
+    spacing_below: small, italic: false, background: 'theme:Secondary 700', bold: true,
+    underline: false, icon: ''}
+  type: Link
+  layout_properties: {grid_position: 'RXXBCD,ZUTDRU'}
+  event_bindings: {click: cart_link_click}
+- name: label_4
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'RXXBCD,YMGBZI'}
 - type: Label
   properties: {role: headline, align: left, tooltip: '', border: '', foreground: 'theme:Gray
       50', visible: true, text: 'From the archive (Sold/Unavailable) :', font_size: null,
-    font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false, icon: ''}
+    font: Yeseva One, spacing_above: small, icon_align: left, spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: ''}
   name: label_3_copy
   layout_properties: {grid_position: 'IENLHY,HLBDMD'}
 - name: spacer_6
   properties: {height: -8.40234375}
   type: Spacer
   layout_properties: {grid_position: 'RAQXXF,VCMHNU', row_background: 'theme:White'}
+- name: spacer_1_copy
+  properties: {height: 17.3076171875}
+  type: Spacer
+  layout_properties: {grid_position: 'WNFWOZ,IJFQOE'}
 - type: FlowPanel
   properties: {role: flow-flexer, spacing: medium, align: justify, tooltip: '', border: '',
     foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}

@@ -28,7 +28,7 @@ class Home(HomeTemplate):
       else:
         self.flow_panel_1.add_component(Product(item=p), width='30%')
 
-    self.flow_panel_2.add_component(About())
+    self.flow_panel_2.add_component(About(),full_width_row=True)
 
   
   def shop_button_click(self, **event_args):

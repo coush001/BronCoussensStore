@@ -65,7 +65,7 @@ components:
         properties: {role: secondary-color, align: center, tooltip: '', border: '',
           enabled: true, foreground: '', visible: true, text: submit, font_size: null,
           font: '', spacing_above: small, icon_align: top, spacing_below: small, italic: false,
-          background: '', bold: false, underline: false, icon: ''}
+          background: 'theme:Secondary 700', bold: false, underline: false, icon: ''}
         layout_properties: {grid_position: 'QWGUVL,GUAAMC', full_width_row: true,
           row_background: 'theme:Primary 500'}
         event_bindings: {click: subscribe_button_click}
@@ -79,13 +79,6 @@ components:
     properties: {height: 47.56768798828125, width: 605}
     layout_properties: {grid_position: 'ESYEID,RBAYKQ'}
     name: xy_panel_1
-- type: Label
-  properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: Bronwen Coussens Ceramics, font_size: 24, font: Yeseva One,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
-    bold: false, underline: false, icon: ''}
-  layout_properties: {slot: title}
-  name: label_1
 - name: flow_panel_2
   properties: {}
   type: FlowPanel
@@ -130,4 +123,11 @@ components:
   - name: spacer_1
     properties: {height: 32}
     type: Spacer
-    layout_properties: {width: 181.41846875}
+    layout_properties: {width: 34.015844140625}
+- type: Label
+  properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
+    visible: true, text: Bronwen Coussens Ceramics, font_size: 24, font: Yeseva One,
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
+  layout_properties: {slot: title}
+  name: label_1
