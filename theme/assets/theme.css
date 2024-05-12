@@ -618,7 +618,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 */
 
 .anvil-role-header-photo {
-  background: url(_/theme/pots1.png);
+  background: url(_/theme/rokpool.jpeg);
   min-height: 700px;
   background-attachment: fixed;
   background-size: cover;
@@ -631,7 +631,7 @@ https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-m
 }
 
 .anvil-role-shop-header {
-  background: url(_/theme/shop-header.jpg);
+  background: url(_/theme/rokpool.jpeg);
   background-attachment: fixed;
   background-size: cover;
   padding: 100px 0px;

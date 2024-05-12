@@ -10,7 +10,7 @@ components:
   layout_properties: {grid_position: 'OEYLMM,LPIWNK', full_width_row: true}
   components:
   - type: Spacer
-    properties: {visible: true, spacing_above: small, spacing_below: small, height: '150',
+    properties: {visible: true, spacing_above: small, spacing_below: small, height: 12.900604248046875,
       tooltip: ''}
     name: spacer_1
     layout_properties: {grid_position: 'JEIDEP,DBLSIN'}
@@ -21,7 +21,7 @@ components:
     components:
     - type: Label
       properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
-        visible: true, text: Welcome to Bronwen Coussens Ceramics, font_size: 30,
+        visible: true, text: Welcome to Bronwen Coussens Ceramics, font_size: 32,
         font: Yeseva One, spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '', bold: false, underline: false, icon: ''}
       name: label_1
@@ -37,8 +37,8 @@ components:
           and I hope it is reflected in the pieces that I make. My inspiration comes
           from the environment that I often find myself, whether is be the coastline
           - rock, sea, sand and pebbles or the woodland - moss, lichen, seed heads
-          and wild plants.', role: text, foreground: 'theme:Gray 800', bold: false,
-        align: center, underline: false, italic: false, font_size: 18}
+          and wild plants.', role: text, foreground: 'theme:White', bold: true, align: center,
+        underline: false, italic: false, font_size: 18}
       type: Label
       layout_properties: {grid_position: 'NTAEKD,XDJBTQ', full_width_row: false}
     - name: spacer_3
@@ -59,12 +59,38 @@ components:
     underline: false}
   type: Label
   layout_properties: {grid_position: 'RRAYTF,QLIUPT'}
-- name: link_1
-  properties: {url: 'https://www.artweeks.org/v/patricia-warrener-brenda-bradford-bronwen-coussens-soa',
-    text: '        >  18 - 27th May 2024, Watlington : https://www.artweeks.org/v/patricia-warrener-brenda-bradford-bronwen-coussens-soa',
-    foreground: 'theme:RichBlue', bold: true}
-  type: Link
-  layout_properties: {grid_position: 'DAQABV,HBEMRA'}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'DAQABV,DJIPVF'}
+  components:
+  - name: image_1
+    properties: {source: _/theme/bucksartweeks-logo-2x.png}
+    type: Image
+    layout_properties: {grid_position: 'FYPVIU,EWZAMI'}
+  - name: link_1
+    properties: {url: 'https://www.artweeks.org/v/patricia-warrener-brenda-bradford-bronwen-coussens-soa',
+      text: '18 - 27th May 2024, Watlington Oxfordshire Art Week < click to open in
+        new tab', foreground: 'theme:Primary 500', bold: true, align: center}
+    type: Link
+    layout_properties: {grid_position: 'SXXWSC,IXNOAZ'}
+    components: []
+- name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'DAQABV,NYAMYM'}
+  components:
+  - name: image_2
+    properties: {source: _/theme/oxon.png}
+    type: Image
+    layout_properties: {grid_position: 'HTITYJ,KBKPIF'}
+    data_bindings: []
+  - name: link_1_copy
+    properties: {url: 'https://www.bucksartweeks.org.uk/open-studios/2024/where-inspiration-blooms',
+      text: ' 8th - 16th June  2024 BUCS Art Weeks < click to open in new tab', foreground: 'theme:Primary
+        500', bold: true, align: center}
+    type: Link
+    layout_properties: {grid_position: 'PJBRLJ,OKCCYD'}
 - name: label_1_copy
   properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
     visible: true, text: 'Previous activities and more:', font_size: 24, font: Yeseva One,
@@ -110,5 +136,5 @@ components:
 - type: Spacer
   properties: {height: 71}
   name: spacer_4
-  layout_properties: {grid_position: 'OCYAYI,YBQGEM'}
+  layout_properties: {grid_position: 'OCYAYI,YBQGEM', full_width_row: true}
 is_package: true
