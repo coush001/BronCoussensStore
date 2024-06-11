@@ -8,8 +8,7 @@ services:
   server_config: {}
 - source: /runtime/services/stripe.yml
   client_config: {live_mode: true}
-  server_config: {refresh_token: rt_MbipmaxSCI0xPf5Y5v6TpWniz8OkUQLxfZkoYK0CJ3q47NIr,
-    stripe_user_id: acct_1LsVFaIOiPmFV0YZ}
+  server_config: {refresh_token: rt_MbipmaxSCI0xPf5Y5v6TpWniz8OkUQLxfZkoYK0CJ3q47NIr, stripe_user_id: acct_1LsVFaIOiPmFV0YZ}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {test_mode: false}
@@ -17,12 +16,10 @@ startup: {type: form, module: Main}
 package_name: BCS
 allow_embedding: false
 name: BronwenCoussensStore
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
 metadata: {title: B.C. Ceramics, logo_img: 'asset:download.jpeg', description: Bronwen Coussens Ceramics}
 startup_form: null
-native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Yeseva+One&display=swap"
-    rel="stylesheet">'}
+native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Yeseva+One&display=swap" rel="stylesheet">'}
 db_schema:
   products:
     title: Products

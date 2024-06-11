@@ -48,6 +48,13 @@ class Product(ProductTemplate):
     self.remove_()
     pass
 
+  def added_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    get_open_form().cart_link1_click()
+    
+    
+    pass
+
 
 
 

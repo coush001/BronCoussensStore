@@ -58,11 +58,11 @@ class Main(MainTemplate):
     """This method is called when the link is clicked"""
     self.navigate(self.about_link, About())
     
-  def contact_link_click(self, **event_args):
+  def contact_link1_click(self, **event_args):
     """This method is called when the Link is shown on the screen"""
     self.navigate(self.contact_link, Contact())
 
-  def cart_link_click(self, **event_args):
+  def cart_link1_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.navigate(self.cart_link, Cart(items=self.cart_items))
 

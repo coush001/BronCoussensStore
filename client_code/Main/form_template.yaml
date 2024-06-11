@@ -5,129 +5,67 @@ container:
   event_bindings: {}
 components:
 - type: ColumnPanel
-  properties: {role: max-width, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: small,
-    background: ''}
+  properties: {role: max-width, col_widths: '{}', spacing_above: none, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
   layout_properties: {slot: default}
   name: content_panel
   components:
-  - name: flow_panel_1
-    properties: {}
-    type: FlowPanel
-    layout_properties: {grid_position: 'QCURUV,XKEJAB'}
-    components: []
+  - name: contact_link
+    properties: {text: Contact, foreground: 'theme:White', background: 'theme:Primary 700'}
+    type: Button
+    layout_properties: {grid_position: 'PEXXFM,VNGHAE'}
+  - name: cart_link
+    properties: {text: Checkout, background: 'theme:Primary 700', foreground: 'theme:White'}
+    type: Button
+    layout_properties: {grid_position: 'PEXXFM,NTWGET'}
+  - name: shop_link
+    properties: {text: Gallery, background: 'theme:Primary 500', foreground: 'theme:White'}
+    type: Button
+    layout_properties: {grid_position: 'PEXXFM,TAIRWW'}
   - type: ColumnPanel
-    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}',
-      spacing_below: small, background: ''}
+    properties: {role: null, col_widths: '{}', spacing_above: none, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
     layout_properties: {grid_position: 'MGQLHS,HLNGII', full_width_row: null}
     name: column_panel_1
   - type: ColumnPanel
-    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-      spacing_below: small, background: 'theme:Primary 500'}
+    properties: {role: null, col_widths: '{}', spacing_above: small, background: 'theme:Primary 500', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
     layout_properties: {grid_position: 'PTKZSA,EYTBLR', full_width_row: true}
     name: card_1
     components:
     - type: Link
-      properties: {role: null, url: 'https://www.instagram.com/bronwencoussens_ceramics/',
-        align: center, tooltip: '', border: '', foreground: white, visible: true,
-        text: '', font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
-        icon_align: left, col_widths: '{}', spacing_below: small, italic: false, background: '',
-        bold: false, underline: false, icon: 'fa:instagram'}
-      layout_properties: {grid_position: 'KRQCTR,NZSIVV', row: SNXMYR, width_xs: 1,
-        col_xs: 5, full_width_row: true, row_background: 'theme:Primary 500'}
+      properties: {role: null, bold: false, align: center, col_widths: '{}', spacing_above: small, background: '', icon: 'fa:instagram', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://www.instagram.com/bronwencoussens_ceramics/', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
+      layout_properties: {grid_position: 'KRQCTR,NZSIVV KEDXBZ,SOKIKA', row: SNXMYR, width_xs: 1, col_xs: 5, full_width_row: true, row_background: 'theme:Primary 500'}
       name: insta_link_2
+    - type: Link
+      properties: {role: spaced-title, bold: true, align: center, col_widths: '{}', spacing_above: small, background: '', icon: '', wrap_on: never, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: 'theme:White', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: HOME}
+      layout_properties: {grid_position: 'KRQCTR,NZSIVV WRQAXA,TRXXKH'}
+      event_bindings: {click: home_link_click}
+      name: home_link
     - type: Label
-      properties: {role: spaced-title, align: center, tooltip: '', border: '', foreground: white,
-        visible: true, text: 'Want to be notified of new art and exhibitions? - sign
-          up for notifications here:', font_size: null, font: '', spacing_above: none,
-        icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      layout_properties: {grid_position: 'KRQCTR,RKNLPM', full_width_row: true, row_background: 'theme:Primary
-          500'}
+      properties: {role: spaced-title, bold: false, align: center, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: white, spacing_below: none, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Want to be notified of new art and exhibitions? - sign up for notifications here:'}
+      layout_properties: {grid_position: 'KRQCTR,RKNLPM', full_width_row: true, row_background: 'theme:Primary 500'}
       name: label_9
     - type: ColumnPanel
       properties: {col_widths: '{}'}
-      layout_properties: {grid_position: 'KRQCTR,WWRIOI', row_background: 'theme:Primary
-          500', full_width_row: true}
+      layout_properties: {grid_position: 'KRQCTR,WWRIOI', row_background: 'theme:Primary 500', full_width_row: true}
       name: column_panel_2
       components:
       - type: TextBox
-        properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter your email here,
-          border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-          font: '', spacing_above: small, type: text, spacing_below: small, italic: true,
-          background: 'theme:Gray 600', bold: false, underline: false}
-        layout_properties: {grid_position: 'QWGUVL,GQOJND', width: 196.5, full_width_row: true,
-          row_background: 'theme:Primary 500'}
+        properties: {role: null, bold: false, align: center, placeholder: Enter your email here, spacing_above: small, background: 'theme:Gray 600', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: true, enabled: true, font_size: null, tooltip: '', text: ''}
+        layout_properties: {grid_position: 'QWGUVL,GQOJND', width: 196.5, full_width_row: true, row_background: 'theme:Primary 500'}
         name: subscribe_textbox
       - type: Button
-        properties: {role: secondary-color, align: center, tooltip: '', border: '',
-          enabled: true, foreground: '', visible: true, text: submit, font_size: null,
-          font: '', spacing_above: small, icon_align: top, spacing_below: small, italic: false,
-          background: 'theme:Secondary 700', bold: false, underline: false, icon: ''}
-        layout_properties: {grid_position: 'QWGUVL,GUAAMC', full_width_row: true,
-          row_background: 'theme:Primary 500'}
+        properties: {role: secondary-color, bold: false, align: center, spacing_above: small, background: 'theme:Secondary 700', icon: '', underline: false, font: '', icon_align: top, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: submit}
+        layout_properties: {grid_position: 'QWGUVL,GUAAMC', full_width_row: true, row_background: 'theme:Primary 500'}
         event_bindings: {click: subscribe_button_click}
         name: subscribe_button
   - name: label_2
-    properties: {text: Website built by Hugo Coussens, foreground: 'theme:White',
-      italic: true}
+    properties: {text: Website built by Hugo Coussens, foreground: 'theme:White', italic: true}
     type: Label
     layout_properties: {grid_position: 'XCQALY,ZCUAYN'}
   - type: XYPanel
     properties: {height: 47.56768798828125, width: 605}
     layout_properties: {grid_position: 'ESYEID,RBAYKQ'}
     name: xy_panel_1
-- name: flow_panel_2
-  properties: {}
-  type: FlowPanel
-  layout_properties: {slot: nav-right}
-  components:
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: 'theme:White', visible: true, text: HOME, font_size: 16, wrap_on: never,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: small, italic: false, background: '', bold: true, underline: false,
-      icon: ''}
-    layout_properties: {}
-    event_bindings: {click: home_link_click}
-    name: home_link
-  - name: shop_link
-    properties: {role: display-responsive, url: '', align: center, tooltip: '', border: '',
-      foreground: 'theme:White', visible: true, text: ONLINE GALLERY, font_size: 16,
-      wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left,
-      col_widths: '{}', spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
-    type: Link
-    layout_properties: {}
-    event_bindings: {click: shop_link_click}
-  - name: cart_link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: 'theme:White', visible: true, text: CHECKOUT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: small, italic: false, background: '', bold: true, underline: false,
-      icon: ''}
-    type: Link
-    layout_properties: {}
-    event_bindings: {click: cart_link_click}
-  - type: Link
-    properties: {role: spaced-title, url: '', align: center, tooltip: '', border: '',
-      foreground: 'theme:White', visible: true, text: CONTACT, font_size: 16, wrap_on: mobile,
-      font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}',
-      spacing_below: small, italic: false, background: '', bold: true, underline: false,
-      icon: ''}
-    event_bindings: {click: contact_link_click}
-    name: contact_link
-    layout_properties: {}
-  - name: spacer_1
-    properties: {height: 32}
-    type: Spacer
-    layout_properties: {width: 34.015844140625}
 - type: Label
-  properties: {role: logo, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: Bronwen Coussens Ceramics, font_size: 24, font: Yeseva One,
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
-    bold: false, underline: false, icon: ''}
+  properties: {role: logo, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: Yeseva One, icon_align: left, foreground: 'theme:White', spacing_below: small, visible: true, border: '', italic: false, font_size: 24, tooltip: '', text: Bronwen Coussens Ceramics}
   layout_properties: {slot: title}
   name: label_1

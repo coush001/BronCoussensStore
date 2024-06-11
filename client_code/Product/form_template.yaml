@@ -1,79 +1,53 @@
 container:
   type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: none, col_widths: '{}', spacing_below: medium,
-    background: ''}
+  properties: {role: null, col_widths: '{}', spacing_above: none, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: medium, visible: true, border: '', tooltip: ''}
 components:
 - type: Image
-  properties: {role: null, vertical_align: center, height: '', tooltip: '', border: '',
-    foreground: '', visible: true, display_mode: original_size, spacing_above: small,
-    source: '', spacing_below: small, background: '', horizontal_align: center}
+  properties: {role: null, vertical_align: center, spacing_above: small, background: '', horizontal_align: center, source: '', foreground: '', display_mode: original_size, spacing_below: small, visible: true, border: '', tooltip: '', height: ''}
   name: image_1
   layout_properties: {grid_position: 'ZEDPKL,MREOKR'}
   data_bindings:
   - {property: source, code: 'self.item[''img'']'}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: '', font_size: 18, font: Yeseva One, spacing_above: small,
-    icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
+  properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: Yeseva One, icon_align: left, foreground: '', spacing_below: none, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: ''}
   name: label_1
   layout_properties: {grid_position: 'LDDFIO,MIORVE'}
   data_bindings:
   - {property: text, code: 'self.item[''name'']'}
 - type: Label
-  properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
-    visible: true, text: '', font_size: 16, font: '', spacing_above: none, icon_align: left,
-    spacing_below: none, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
+  properties: {role: null, bold: false, align: center, spacing_above: none, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:White', spacing_below: none, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
   name: label_3
   layout_properties: {grid_position: 'YDDDTF,QEIHDQ'}
   data_bindings:
   - {property: text, code: 'self.item[''description'']'}
 - type: FlowPanel
-  properties: {role: null, spacing: medium, align: center, tooltip: '', border: '',
-    foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  properties: {role: null, align: center, spacing_above: small, background: '', foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', spacing: medium}
   name: flow_panel_1
   layout_properties:
     col_widths: {}
     grid_position: FDEMGM,VIBWKH
   components:
   - type: Button
-    properties: {role: secondary-color, align: full, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: View more, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: 'theme:Secondary
-        700', bold: false, underline: false, icon: ''}
+    properties: {role: secondary-color, bold: false, align: full, spacing_above: small, background: 'theme:Secondary 700', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: View more}
     name: view_button
     layout_properties: {grid_position: 'XWJJFA,BTUFOG HLJDJV,QCIANQ'}
     event_bindings: {click: view_button_click}
   - type: Button
-    properties: {role: primary-color, align: full, tooltip: '', border: '', enabled: false,
-      foreground: '', visible: false, text: currently in cart, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '#3d9037', bold: false, underline: false, icon: 'fa:check-circle-o'}
+    properties: {role: primary-color, bold: false, align: full, spacing_above: small, background: '#3d9037', icon: 'fa:check-circle-o', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, enabled: false, font_size: null, tooltip: '', text: currently in cart}
     name: added_button
     layout_properties: {grid_position: 'XWJJFA,BTUFOG HLJDJV,HTXYRT'}
     event_bindings: {click: added_button_click}
   - type: Button
-    properties: {role: null, align: full, tooltip: '', border: '', enabled: true,
-      foreground: '#c16b25', visible: false, text: Item already Sold, font_size: null,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: 'theme:White', bold: false, underline: false, icon: 'fa:asterisk'}
+    properties: {role: null, bold: false, align: full, spacing_above: small, background: 'theme:White', icon: 'fa:asterisk', underline: false, font: '', icon_align: left, foreground: '#c16b25', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Item already Sold}
     name: soldButton
     event_bindings: {click: added_button_click}
 - name: add_button
-  properties: {role: secondary-color, align: full, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: true, text: Add to cart, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: 'theme:Secondary
-      700', bold: false, underline: false, icon: ''}
+  properties: {role: secondary-color, bold: false, align: full, spacing_above: small, background: 'theme:Secondary 700', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Add to cart}
   type: Button
   layout_properties: {grid_position: 'FDEMGM,RMJXJB'}
   event_bindings: {click: add_button_click}
 - name: remove_button
-  properties: {role: primary-color, align: full, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: false, text: Remove, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '#9a0909',
-    bold: false, underline: false, icon: 'fa:remove'}
+  properties: {role: primary-color, bold: false, align: full, spacing_above: small, background: '#9a0909', icon: 'fa:remove', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Remove}
   type: Button
   layout_properties: {grid_position: 'FDEMGM,RMJXJB NHDTJX,SGYWRE'}
   event_bindings: {click: remove_button_click}
