@@ -35,4 +35,8 @@ class Home(HomeTemplate):
     """This method is called when the button is clicked"""
     get_open_form().shop_link_click()
 
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    pass
+
 

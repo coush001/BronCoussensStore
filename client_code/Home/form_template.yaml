@@ -55,6 +55,7 @@ components:
     type: Link
     layout_properties: {grid_position: 'SXXWSC,IXNOAZ'}
     components: []
+    event_bindings: {click: link_1_click}
 - name: column_panel_2
   properties: {}
   type: ColumnPanel
